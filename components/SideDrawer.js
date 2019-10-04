@@ -9,16 +9,24 @@ export default props => {
       <List>
         <ListItem button onClick={props.onClose}>
           <ListItemText>
-            <Link href="/sell">
-              <a>Item1</a>
+            <Link href="/shop">
+              <a>Shop</a>
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button onClick={props.onClose}>
-          <ListItemText>Item2</ListItemText>
+          <ListItemText>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </ListItemText>
         </ListItem>
         <ListItem button onClick={props.onClose}>
-          <ListItemText>Item3</ListItemText>
+          <ListItemText>
+            <Link href="/sell">
+              <a>Sell</a>
+            </Link>
+          </ListItemText>
         </ListItem>
       </List>
     </Drawer>
