@@ -7,7 +7,7 @@ import { useQuery } from "@apollo/react-hooks";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 
-const ALL_ITEMS = gql`
+const ALL_ITEMS_QUERY = gql`
   query {
     items {
       id
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 const Shop = props => {
   const classes = useStyles();
 
-  const { data, error, loading } = useQuery(ALL_ITEMS);
+  const { data, error, loading } = useQuery(ALL_ITEMS_QUERY);
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Something went wrong</div>;
   console.log(data.items);

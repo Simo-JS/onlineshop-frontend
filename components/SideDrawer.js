@@ -16,8 +16,8 @@ export default props => {
         </ListItem>
         <ListItem button onClick={props.onClose}>
           <ListItemText>
-            <Link href="/">
-              <a>Home</a>
+            <Link href="/sell">
+              <a>Sell</a>
             </Link>
           </ListItemText>
         </ListItem>
